@@ -1,12 +1,15 @@
-const images = document.querySelectorAll('.wrapper-images');
-const hidden = document.querySelectorAll('.hidden');
+const arrows = document.querySelectorAll(".wrapper-arrows");
+const hidden = document.querySelectorAll(".hidden");
 
-images.forEach(e => {
-    e.addEventListener('click', () => {
-        const showParas = e.parentElement.lastElementChild;
-     showParas.style.display = 'block'
-
-      
-    })
+arrows.forEach((e) => {
+  e.addEventListener("click", () => {
+    const showParas = e.parentElement.lastElementChild;
+    if(showParas.style.display === 'none' || showParas.style.display === ''){
+        showParas.style.display = 'block'
+    }
+    else{
+        showParas.style.display = 'none'
+    }
+  });
 });
 

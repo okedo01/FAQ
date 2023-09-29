@@ -1,66 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
-
-  *{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-
-  body{
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 12px;
-  }
-
- 
-
-.combine-images .pattern-desktop{
-position: relative;
-margin-top: 20px;
-margin-left: 20px;
-
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
- .combine-images .box-desktop{
-    position: absolute;
-    bottom: 18rem;
-    left: 0.1px;
-}
-    
-.container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: white;
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  background-color: hsl(240, 73%, 65%);
+  margin: 6% 15%;
 }
 
-.question-division{
-    margin-top: 10em;
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  background-color: white;
+  border-radius: 15px;
 }
 
-.quiz-paragraphs{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   padding: 15px 0;
-   color: hsl(238, 29%, 16%);
+.illustrations {
+  position: relative;
+  right: 10%;
+  bottom: 20%;
 }
 
-.hidden{
-    display: none;
+.pattern-desktop {
+  position: absolute;
 }
 
-.wrapper-images{
-    cursor: pointer;
+#pattern-mobile {
+  display: none;
 }
 
-.attribution{
-    margin-top: 10rem;
-    padding: 20px 15px;
+#woman-online-mobile {
+  display: none;
 }
 
-footer{
-    display: flex;
-    justify-content: end;
-    margin-top: 5rem;
-    padding: 20px 15px;
-    font-size: 15px;
+.box-desktop {
+  position: absolute;
+  top: 40%;
+}
+
+.pattern-desktop img {
+  width: 500px;
+}
+
+.quiz-paragraphs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px 10px;
+  color: hsl(238, 29%, 16%);
+}
+
+.hidden {
+  display: none;
+}
+
+.wrapper-arrows {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.attribution {
+  display: flex;
+  justify-content: end;
+  font-size: 15px;
+  margin-top: 5rem;
+  padding: 20px 15px;
 }
